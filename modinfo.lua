@@ -1,7 +1,7 @@
 name = "Hound is Coming"
-version = "1.2.0"
+version = "2.1.5"
 author = "Majaw"
-description = "Tips to the hound attack"
+description = "Tips to the hounds attack."
 forumthread = ""
 
 dont_starve_compatible = false
@@ -35,7 +35,7 @@ configuration_options =
 	},
 	{
 		name = "format",
-		label = "String format",
+		label = "String Format",
 		options =	{
 						{description = "Complex", data = "complex"},
 						{description = "Simplex", data = "simplex"}
@@ -46,7 +46,7 @@ configuration_options =
 	},
 	{
 		name = "days",
-		label = "Days in advance",
+		label = "Days in Advance",
 		options =	{
 						{description = "7 Days", data = 7},
 						{description = "6 Days", data = 6},
@@ -59,6 +59,17 @@ configuration_options =
 					},
 
 		default = 3,
+	
+	},
+	{
+		name = "custom_phrases",
+		label = "Allow Custom Phrases",
+		options =	{
+						{description = "True", data = true},
+						{description = "False", data = false}
+					},
+
+		default = true,
 	
 	}
 }
