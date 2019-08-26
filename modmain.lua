@@ -3,6 +3,7 @@ local Widget = GLOBAL.require('widgets/widget')
 local ENABLE_HOUND_ATTACK = GetModConfigData("enable_houndattack")
 local STRING_FORMAT       = GetModConfigData("format")
 local DAYS_IN_ADVANCE     = GetModConfigData("days")
+local CUSTOM_PHRASES      = GetModConfigData("custom_phrases")
 
 -- A full Day lasts for 8 real-time minutes
 local secADay = 8 * 60
@@ -66,5 +67,24 @@ end
 if ENABLE_HOUND_ATTACK then
 	
 	AddPrefabPostInit("world", HoundAttack)
+	
+end
+
+if CUSTOM_PHRASES then
+
+	GLOBAL.STRINGS.CHARACTERS.GENERIC.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]] -- Equivalent to WILSON
+	GLOBAL.STRINGS.CHARACTERS.WILLOW.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WOLFGANG.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WENDY.ANNOUNCE_HOUNDS			= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WX78.ANNOUNCE_HOUNDS 			= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WICKERBOTTOM.ANNOUNCE_HOUNDS	= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WOODIE.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WAXWELL.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WATHGRITHR.ANNOUNCE_HOUNDS	= [[The Hounds is Coming...]] -- Equivalent to WIGFRID
+	GLOBAL.STRINGS.CHARACTERS.WEBBER.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WINONA.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WARLY.ANNOUNCE_HOUNDS			= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WORTOX.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]]
+	GLOBAL.STRINGS.CHARACTERS.WORMWOOD.ANNOUNCE_HOUNDS		= [[The Hounds is Coming...]]
 	
 end
